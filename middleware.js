@@ -1,10 +1,7 @@
 import { next } from '@vercel/edge';
-import { Analytics } from '@vercel/analytics/react';
-
 
 export default function middleware(req) {
-  return next(
-    <Analytics />,{
+  return next({
     headers: {
       'Referrer-Policy': 'origin-when-cross-origin',
       'X-Frame-Options': 'DENY',
