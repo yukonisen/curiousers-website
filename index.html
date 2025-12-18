@@ -23,9 +23,24 @@
            "url" : "https://curiousers.org/"
          }
       </script>
+      <!-- Matomo -->
+      <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+         var u="//analytics.curiousers.org/";
+         _paq.push(['setTrackerUrl', u+'matomo.php']);
+         _paq.push(['setSiteId', '1']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+      </script>
+      <!-- End Matomo Code -->
    </head>
    <body>
-      <h1 style="font-size: 58px; font-weight: 500;">Curiousers!</h1>
+      <h1 style="font-weight: 500;">Curiousers!</h1>
       <br />
       <p>Curiousers is a community for gamers who love to play, chat and have fun.</p>
       <p>Whether you are into FPS, RPG, MOBA, strategy 
@@ -38,20 +53,6 @@
          , or use the invite code: <code>ipr36u</code>
       </p>
       <hr />
-      <style>
-         @font-face {
-         font-family: Bahnschrift;
-         src: url('http://fonts.cdnfonts.com/css/bahnschrift') format('truetype');
-         }
-         :root {
-         font-family: Bahnschrift;
-         font-size: larger;
-         }
-         .btn {
-         border-radius: 10px;
-         padding: 10px ;
-         }
-      </style>
-      <p style="font-size: large; font-weight: 100;">ⓒ 2020-2024 Curiousers!</p>
+      <p style="font-size: medium; font-weight: 100;">ⓒ 2020-2026 Curiousers!</p>
    </body>
 </html>
